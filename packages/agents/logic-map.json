@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "action": {
+        "id": "test-logic/broken.ts:processOrder",
+        "name": "processOrder",
+        "filePath": "test-logic/broken.ts",
+        "parameters": [
+          "orderId"
+        ],
+        "calls": [
+          "unresolved:getAccountDetails",
+          "unresolved:validateQuantumSecurity"
+        ]
+      },
+      "result": {
+        "actionId": "test-logic/broken.ts:processOrder",
+        "status": "PENDING",
+        "probabilityOfFailure": 0.4,
+        "dependenciesMet": false
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "sourceActionId": "test-logic/broken.ts:processOrder",
+      "missingActionName": "getAccountDetails",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "test-logic/broken.ts:processOrder",
+      "missingActionName": "validateQuantumSecurity",
+      "severity": "WARNING"
+    }
+  ]
+}

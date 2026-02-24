@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+        "name": "UniversalCodeScanner.scanProject",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [],
+        "calls": [
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+          "external:createProgram",
+          "external:getTypeChecker",
+          "external:getSourceFiles",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit",
+        "name": "UniversalCodeScanner.visit",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "node",
+          "sourceFile",
+          "checker"
+        ],
+        "calls": [
+          "external:isFunctionDeclaration",
+          "external:isMethodDeclaration",
+          "external:isMethodDeclaration",
+          "external:isClassDeclaration",
+          "external:getText",
+          "external:getText",
+          "external:getText",
+          "external:map",
+          "external:getText",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+          "external:push",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+        "name": "UniversalCodeScanner.findCalls",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "node",
+          "calls",
+          "checker"
+        ],
+        "calls": [
+          "external:isCallExpression",
+          "external:getResolvedSignature",
+          "external:getDeclaration",
+          "external:getSourceFile",
+          "external:includes",
+          "external:includes",
+          "external:isClassDeclaration",
+          "external:getText",
+          "external:push",
+          "external:push",
+          "external:getText",
+          "external:push",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+        "name": "UniversalCodeScanner.getAllFiles",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "dir",
+          "extensions"
+        ],
+        "calls": [
+          "external:readdirSync",
+          "external:forEach",
+          "external:join",
+          "external:unknown",
+          "external:isDirectory",
+          "external:concat",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+          "external:includes",
+          "external:extname",
+          "external:push"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+        "name": "LogicDetector.analyze",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts",
+        "parameters": [],
+        "calls": [
+          "external:forEach",
+          "external:set",
+          "external:has",
+          "external:pop",
+          "external:split",
+          "external:startsWith",
+          "external:push",
+          "external:push",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps",
+        "name": "LogicDetector.findCriticalGaps",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts",
+        "parameters": [
+          "nodes",
+          "gaps"
+        ],
+        "calls": [
+          "external:map",
+          "external:startsWith",
+          "external:startsWith",
+          "external:has",
+          "external:push",
+          "external:pop",
+          "external:split"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "src/index.ts:main",
+        "name": "main",
+        "filePath": "src/index.ts",
+        "parameters": [],
+        "calls": [
+          "external:cwd",
+          "external:existsSync",
+          "external:error",
+          "external:exit",
+          "external:log",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+          "external:join",
+          "external:cwd",
+          "external:writeFileSync",
+          "external:stringify",
+          "external:log",
+          "external:log",
+          "external:log",
+          "external:log"
+        ]
+      },
+      "result": {
+        "actionId": "src/index.ts:main",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    }
+  ],
+  "gaps": []
+}

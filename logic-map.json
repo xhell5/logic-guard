@@ -1,0 +1,584 @@
+{
+  "nodes": [
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/apps/web/src/lib/utils.ts:cn",
+        "name": "cn",
+        "filePath": "C:/Users/black/system-logic/apps/web/src/lib/utils.ts",
+        "parameters": [
+          "inputs"
+        ],
+        "calls": [
+          "external:unknown",
+          "external:clsx"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/apps/web/src/lib/utils.ts:cn",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/density.ts:DensityCalculator.calculate",
+        "name": "DensityCalculator.calculate",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/density.ts",
+        "parameters": [],
+        "calls": [
+          "external:map",
+          "external:existsSync",
+          "external:readFileSync",
+          "external:split",
+          "external:forEach",
+          "external:trim",
+          "external:startsWith",
+          "external:startsWith",
+          "external:startsWith",
+          "external:startsWith",
+          "external:startsWith",
+          "external:startsWith"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/density.ts:DensityCalculator.calculate",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/patterns.ts:PatternDetector.detect",
+        "name": "PatternDetector.detect",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/patterns.ts",
+        "parameters": [],
+        "calls": [
+          "external:forEach",
+          "external:set",
+          "external:get",
+          "external:push",
+          "external:filter",
+          "external:push",
+          "external:join",
+          "external:map",
+          "external:some"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/patterns.ts:PatternDetector.detect",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.performAudit",
+        "name": "SelfAuditor.performAudit",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:push",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectCircularDependencies",
+          "external:push",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+          "external:push",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectStaticWeaknesses",
+          "external:push",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectAsyncRisks"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.performAudit",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectCircularDependencies",
+        "name": "SelfAuditor.detectCircularDependencies",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:forEach",
+          "external:set",
+          "external:add",
+          "external:add",
+          "external:get",
+          "external:has",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:anonymous",
+          "external:has",
+          "external:push",
+          "external:join",
+          "external:delete",
+          "external:has",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:anonymous"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectCircularDependencies",
+        "status": "FAILURE",
+        "probabilityOfFailure": 1,
+        "dependenciesMet": false
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+        "name": "SelfAuditor.detectDeadLogic",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:forEach",
+          "external:set",
+          "external:set",
+          "external:get",
+          "external:entries",
+          "unresolved:id.includes",
+          "external:push",
+          "unresolved:id.split(':').pop",
+          "unresolved:id.split"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+        "status": "PENDING",
+        "probabilityOfFailure": 0.6000000000000001,
+        "dependenciesMet": false
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectStaticWeaknesses",
+        "name": "SelfAuditor.detectStaticWeaknesses",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:map",
+          "external:existsSync",
+          "external:readFileSync",
+          "external:split",
+          "external:forEach",
+          "external:includes",
+          "external:includes",
+          "external:exec",
+          "external:push"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectStaticWeaknesses",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectAsyncRisks",
+        "name": "SelfAuditor.detectAsyncRisks",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:readFileSync",
+          "external:split",
+          "external:push"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectAsyncRisks",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+        "name": "UniversalCodeScanner.scanProject",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [],
+        "calls": [
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+          "external:log",
+          "external:join",
+          "external:createProgram",
+          "external:getTypeChecker",
+          "external:getSourceFiles",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit",
+        "name": "UniversalCodeScanner.visit",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "node",
+          "sourceFile",
+          "checker"
+        ],
+        "calls": [
+          "external:isFunctionDeclaration",
+          "external:isMethodDeclaration",
+          "external:isMethodDeclaration",
+          "external:isClassDeclaration",
+          "external:getText",
+          "external:getText",
+          "external:getText",
+          "external:map",
+          "external:getText",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+          "external:push",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.visit",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+        "name": "UniversalCodeScanner.findCalls",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "node",
+          "calls",
+          "checker"
+        ],
+        "calls": [
+          "external:isCallExpression",
+          "external:getResolvedSignature",
+          "external:getDeclaration",
+          "external:getSourceFile",
+          "external:includes",
+          "external:includes",
+          "unresolved:(declaration as any).name?.getText",
+          "external:isClassDeclaration",
+          "external:getText",
+          "external:push",
+          "external:push",
+          "unresolved:(declaration as any).name?.getText",
+          "external:getText",
+          "external:push",
+          "external:forEachChild",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+        "status": "PENDING",
+        "probabilityOfFailure": 0.4,
+        "dependenciesMet": false
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+        "name": "UniversalCodeScanner.getAllFiles",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts",
+        "parameters": [
+          "dir",
+          "extensions"
+        ],
+        "calls": [
+          "external:includes",
+          "external:includes",
+          "external:includes",
+          "external:includes",
+          "external:readdirSync",
+          "external:forEach",
+          "external:join",
+          "external:unknown",
+          "external:isDirectory",
+          "external:concat",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+          "external:includes",
+          "external:extname",
+          "external:push"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.getAllFiles",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts:runFullAudit",
+        "name": "runFullAudit",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts",
+        "parameters": [],
+        "calls": [
+          "external:log",
+          "external:fileURLToPath",
+          "external:dirname",
+          "external:resolve",
+          "external:log",
+          "external:log",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+          "external:map",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.performAudit",
+          "external:map",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/density.ts:DensityCalculator.calculate",
+          "C:/Users/black/system-logic/packages/agents/src/index-audit.ts:generateReport"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts:runFullAudit",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts:generateReport",
+        "name": "generateReport",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts",
+        "parameters": [
+          "findings",
+          "density",
+          "rootDir"
+        ],
+        "calls": [
+          "external:max",
+          "external:toISOString",
+          "external:toFixed",
+          "external:slice",
+          "external:filter",
+          "external:forEach",
+          "external:filter",
+          "external:forEach",
+          "external:filter",
+          "external:forEach",
+          "external:filter",
+          "external:join",
+          "external:cwd",
+          "external:writeFileSync",
+          "external:log",
+          "external:log",
+          "external:log"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/index-audit.ts:generateReport",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/src/index.ts:main",
+        "name": "main",
+        "filePath": "C:/Users/black/system-logic/packages/agents/src/index.ts",
+        "parameters": [],
+        "calls": [
+          "external:log",
+          "external:join",
+          "external:cwd",
+          "external:existsSync",
+          "external:error",
+          "external:exit",
+          "external:log",
+          "external:parse",
+          "external:readFileSync",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/patterns.ts:PatternDetector.detect",
+          "C:/Users/black/system-logic/packages/agents/src/auditor/density.ts:DensityCalculator.calculate",
+          "C:/Users/black/system-logic/packages/agents/src/judge/graph.ts:anonymous",
+          "external:invoke",
+          "external:join",
+          "external:cwd",
+          "external:writeFileSync",
+          "external:log",
+          "external:log",
+          "external:toFixed",
+          "external:log",
+          "external:log",
+          "external:log"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/src/index.ts:main",
+        "status": "FAILURE",
+        "probabilityOfFailure": 1,
+        "dependenciesMet": false
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/agents/test-logic/broken.ts:processOrder",
+        "name": "processOrder",
+        "filePath": "C:/Users/black/system-logic/packages/agents/test-logic/broken.ts",
+        "parameters": [
+          "orderId"
+        ],
+        "calls": [
+          "unresolved:getAccountDetails",
+          "unresolved:validateQuantumSecurity"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/agents/test-logic/broken.ts:processOrder",
+        "status": "PENDING",
+        "probabilityOfFailure": 0.4,
+        "dependenciesMet": false
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+        "name": "LogicDetector.analyze",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts",
+        "parameters": [],
+        "calls": [
+          "external:forEach",
+          "external:set",
+          "external:has",
+          "external:pop",
+          "external:split",
+          "external:startsWith",
+          "external:push",
+          "external:push",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps",
+        "name": "LogicDetector.findCriticalGaps",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts",
+        "parameters": [
+          "nodes",
+          "gaps"
+        ],
+        "calls": [
+          "external:map",
+          "external:startsWith",
+          "external:startsWith",
+          "external:has",
+          "external:push",
+          "external:pop",
+          "external:split"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.findCriticalGaps",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    },
+    {
+      "action": {
+        "id": "C:/Users/black/system-logic/packages/core/src/index.ts:main",
+        "name": "main",
+        "filePath": "C:/Users/black/system-logic/packages/core/src/index.ts",
+        "parameters": [],
+        "calls": [
+          "external:log",
+          "external:cwd",
+          "external:existsSync",
+          "external:error",
+          "external:exit",
+          "external:log",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.scanProject",
+          "external:log",
+          "C:/Users/black/system-logic/packages/core/src/infrastructure/analyzer.ts:LogicDetector.analyze",
+          "external:join",
+          "external:cwd",
+          "external:writeFileSync",
+          "external:stringify",
+          "external:log",
+          "external:log",
+          "external:log",
+          "external:log"
+        ]
+      },
+      "result": {
+        "actionId": "C:/Users/black/system-logic/packages/core/src/index.ts:main",
+        "status": "SUCCESS",
+        "probabilityOfFailure": 0,
+        "dependenciesMet": true
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+      "missingActionName": "id.includes",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+      "missingActionName": "').pop",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectDeadLogic",
+      "missingActionName": "id.split",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+      "missingActionName": "(declaration as any).name?.getText",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/core/src/infrastructure/scanner.ts:UniversalCodeScanner.findCalls",
+      "missingActionName": "(declaration as any).name?.getText",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/test-logic/broken.ts:processOrder",
+      "missingActionName": "getAccountDetails",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/test-logic/broken.ts:processOrder",
+      "missingActionName": "validateQuantumSecurity",
+      "severity": "WARNING"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectCircularDependencies",
+      "missingActionName": "anonymous",
+      "severity": "CRITICAL"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/auditor/self-audit.ts:SelfAuditor.detectCircularDependencies",
+      "missingActionName": "anonymous",
+      "severity": "CRITICAL"
+    },
+    {
+      "sourceActionId": "C:/Users/black/system-logic/packages/agents/src/index.ts:main",
+      "missingActionName": "anonymous",
+      "severity": "CRITICAL"
+    }
+  ]
+}
